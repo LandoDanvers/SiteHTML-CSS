@@ -1,0 +1,250 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto 1</title>
+    <style>
+    /*Reset_________________________________*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color:lightgrey
+}
+
+a{
+    text-decoration: none;
+    color: #a13838;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+    font-size:21px;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    color:darkred;
+}
+/*Geral_________________________________*/
+.row{
+    width: 100%;
+    float: left
+}
+
+.content{
+    width: 1024px;
+    margin: 0 auto;
+
+}
+
+/*Header_________________________________*/
+.header{
+    padding: 10px 0 ;
+}
+
+.header-logo{
+    float: left;
+}
+
+
+.header h1 a{
+    color: #666;
+}
+.header h1 a span.html{
+    color: rgb(49, 25, 153);
+}
+.header h1 a span.css{
+    color: rgb(255, 9, 9);
+}
+
+
+.header-menu{
+    float: right;
+    padding: 9px 0px;
+}
+.header-menu ul li{
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+/*Bem Vindo_________________________________*/
+.bem-vindo{
+    background-color: rgb(202, 45, 45);
+    padding: 20px 0;
+    text-align: center;
+}
+.bem-vindo .content{
+    width: 620px;
+}
+.bem-vindo .content h1{
+    color: aliceblue;
+}
+
+/*Main_________________________________*/
+.main{
+padding: 30px 0;
+}
+.main-menu{
+    float:left;
+    width: 160px;
+    font-size: 18px;
+}
+.main-menu h1{
+    font-size: 20px;
+}
+.main-menu ul li{
+    margin-top: 20px;
+}
+
+.main-conteudo{
+    float:right;
+    width: 840px;
+}
+.main-conteudo h1{
+font-size: 20px;
+margin-bottom: 10px;
+}
+.main-conteudo p{
+margin-bottom: 30px;
+}
+
+/*ultimos artigos_________________________________*/
+.artigos{
+background-color: rgb(202, 45, 45);
+padding: 30px 0;
+}
+.artigos-title{
+    font-size: 30px;
+    color:  rgb(255, 244, 244);
+    margin: 0 0 15px 0;
+    border-bottom: 2px solid  darkred;
+    padding-bottom: 5px;
+}
+.artigos-coluna{
+    float: left;
+    text-align: justify;
+    width: 30.66%;
+}
+.artigos-coluna:nth-of-type(2){
+   margin-left: 4%;
+   margin-right: 4%;
+}
+.artigos-coluna h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.artigos-coluna a{
+    color: #900;
+}
+.artigos-coluna a:hover{
+    text-decoration:underline;
+}
+
+/*footer_________________________________*/
+.footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+</head>
+<body>
+    <!--Começa o Header-->
+    <div class="row header">
+        <div class="content">
+            <div class="header-logo">
+                <h1>
+                    <a href="https://www.w3schools.com/html/html_css.asp" target="_blank">
+                        <span class="html">HTML</span>&<span class="css">CSS</span>
+                    </a>
+                </h1>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">Home</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">Sobre</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">Artigo</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">E-book</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!--Termina o Header-->
+
+     <!--Começa o Bem-Vindo-->
+    <div class="row bem-vindo">
+        <div class="content">
+            <h1>Este site é voltado para HTML & CSS para quem tiver interesse em aprender</h1>
+        </div>
+    </div>  
+     <!--Termina o Bem-Vindo-->
+
+     <!--Começa o Main-->
+    <div class="row main">
+        <div class="content">
+            <div class="main-menu">
+                <h1>Menu Lateral</h1>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCM1dRsrLjz6SBuPkuXyH0qA" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.facebook.com/htmlecsspro/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.htmlecsspro.com/" target="_blank">HTML</a></li>
+                    <li><a href="https://www.htmlecsspro.com/" target="_blank">CSS</a></li>
+                    <li><a href="https://www.htmlecsspro.com/" target="_blank">Cursos</a></li>
+                </ul>
+            </div>
+
+            <div class="main-conteudo">
+                <h1><a href="https://www.htmlecsspro.com/artigo/breve-historia-do-html" target="_blank">História do HTML</a></h1>
+                <p>Nos primeiros cinco anos (1990-1995), o HTML passou por várias revisões e experimentou várias extensões, hospedadas primeiramente no CERN e depois no IETF.</p>
+
+                <h1><a href="https://htmlecsspro.com/artigo/animacao-de-link-sublinhado" target="_blank">Animação do Link Sublinhado</a></h1>
+                <p>Neste poste, vamos fazer um efeito que ao passar o Mouse sobre o Link, o Underline aparecerá animando no footer do mesmo</p>
+
+                <h1><a href="https://www.htmlecsspro.com/artigo/atributos-usados-em-formularios" target="_blank" >Atributos usados em formulários</a></h1>
+                <p>Vamos falar nesse post sobre os atributos usados nos formulários e entender melhor sobre eles.<br/>Entenda um pouco mais sobre as entradas dos atributos em campos dos formulários.</p>                
+            </div>
+        </div>
+    </div>  
+     <!--Termina o Main-->
+
+      <!--Começa o Ultimos Artigos-->
+    <div class="row artigos">
+        <div class="content">
+            <h1 class="artigos-title">Ultimos artigos</h1>
+            <div class="artigos-coluna">
+                <h2><a href="https://www.agenciamacan.com.br/blog/site-dinamico-vs-estatico-qual-a-diferenca-entre-eles#:~:text=Sites%20est%C3%A1ticos%20s%C3%A3o%20aqueles%20que%20s%C3%A3o%20fixos%20e,avan%C3%A7ada%20e%20bancos%20de%20dados%2C%20al%C3%A9m%20de%20HTML." target="_blank">Sites Estáticos e Dinâmicos</a></h2>
+                <p>Sites estáticos são aqueles que são fixos e exibem o mesmo conteúdo para cada usuário, geralmente escritos exclusivamente em HTML.<br/>Um site dinâmico, por outro lado, é aquele que pode exibir diferentes conteúdos e proporcionar interação do usuário, fazendo uso de programação avançada e bancos de dados, além de HTML.</p>
+            </div>
+
+            <div class="artigos-coluna">
+                <h2><a href="https://desenvolvimentoparaweb.com/miscelanea/10-dicas-desenvolvedores-web-iniciantes-devem-saber/">Dicas desenvolvimento web</a></h2>
+                <p>Se você é um desenvolvedor web iniciante, pode ser confuso sobre onde você deve começar no mundo do desenvolvimento web<br/> já que o ramo é amplo e oferece muitas opções de escolha. Há muitas perguntas a serem feitas, tais como “Que linguagem de programação quero aprender?” ou “Eu deveria saber sobre front end ou apenas back end?”, e existem, literalmente, centenas de outras.</p>
+            </div>
+
+            <div class="artigos-coluna">
+                <h2><a href="https://www.w3schools.com/CSSref/css3_pr_border-radius.asp" target="_blank">CSS3 Border Radius</a></h2>
+                <p>Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner):</p>
+            </div>
+        </div>
+    </div>  
+     <!--Termina o Ultimos Artigos-->
+
+     <!--Começa o footer-->
+    <div class="row footer">
+        <div class="content">
+            <p>&copy; 2018 - HTML e CSS Pro</p>
+        </div>
+    </div>  
+     <!--Termina o footer-->
+
+</body>
